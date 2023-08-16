@@ -1,0 +1,15 @@
+/* Stilizacija za komponentu Login */
+.container {
+  padding: 20px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Ostali stilovi za Login komponentu... */
