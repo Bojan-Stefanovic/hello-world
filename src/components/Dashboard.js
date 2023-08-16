@@ -8,17 +8,6 @@ function Dashboard() {
 
   return (
     <div className={styles.container}>
-      <header>
-        <nav>
-          <ul>
-            {/* <li>
-              <a href="/">Home</a>
-            </li> */}
-          </ul>
-        </nav>
-        {/* <h1>Dashboard</h1> */}
-      </header>
-
       <main>
         <p>Welcome {email || "Not available"}</p>
       </main>

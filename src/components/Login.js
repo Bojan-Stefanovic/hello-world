@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./Login.module.css";
+
 function Login() {
   const [email, setEmail] = useState("");
   const navigate = useNavigate();
@@ -15,25 +16,26 @@ function Login() {
 
   return (
     <div className={styles.container}>
-      <h2>Login</h2>
-
       <main>
-        <form onSubmit={handleSubmit}>
-          <label htmlFor="email">Email:</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            required
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-          <br />
-          <br />
-          <label htmlFor="password">Password:</label>
-          <input type="password" id="password" name="password" required />
-          <br />
-          <br />
+        <h2 className={styles.heading}>Login</h2>
+        <form onSubmit={handleSubmit} className={styles.form}>
+          <div className={styles.formGroup}>
+            <label htmlFor="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+          </div>
+
+          <div className={styles.formGroup}>
+            <label htmlFor="password">Password:</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+
           <button type="submit">Submit</button>
         </form>
       </main>

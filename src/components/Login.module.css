@@ -1,15 +1,50 @@
-/* Stilizacija za komponentu Login */
 .container {
   padding: 20px;
   background-color: #f0f0f0;
   border: 1px solid #ccc;
   border-radius: 5px;
+  text-align: center; /* Center align content horizontally */
 }
 
 .form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 20px; /* Add margin to separate heading from form */
 }
 
-/* Ostali stilovi za Login komponentu... */
+.heading {
+  font-size: 24px;
+  margin-bottom: 10px; /* Add margin at the bottom of the heading */
+}
+
+.formGroup {
+  margin-bottom: 15px; /* Add margin at the bottom of each form group */
+}
+
+label {
+  display: block; /* Make labels full-width */
+  margin-bottom: 5px; /* Add spacing between labels and inputs */
+}
+
+input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%; /* Make inputs full-width */
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #ff9900;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #e68a00;
+}
